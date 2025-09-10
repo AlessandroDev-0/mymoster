@@ -203,29 +203,103 @@ nav a:hover {
   transform: translateY(-50%) scale(1.1);
   background: rgba(0, 0, 0, 0.5);
 }
+.toptitle {
+  text-align: center;
+  border: 5px solid;
+  margin: 20px 0;
+  padding: 10px;
+  border-color: whitesmoke;
+}
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .arrow {
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 100px 0;
+}
+
+.card {
+  background: #181818;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  width: 330px;
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+.imgcard {
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgcard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .imgcard img {
+  transform: scale(1.07);
+}
+
+.cardcontent {
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.cardtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00ff00;
+  margin-bottom: 0.2rem;
+}
+
+.cardinfo {
+  font-size: 1rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+/* Responsividade para os cards */
+@media (max-width: 900px) {
+  .cards {
+    gap: 1rem;
   }
-
-  .arrow.prev {
-    left: 10px;
+  .card {
+    width: 45vw;
+    min-width: 180px;
+    max-width: 320px;
   }
+}
 
-  .arrow.next {
-    right: 10px;
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
-
-  .slide-title {
-    font-size: 2rem;
-  }
-
-  .slide-subtitle {
-    font-size: 1rem;
+  .card {
+    width: 90vw;
+    min-width: 0;
   }
 }
