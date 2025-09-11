@@ -265,7 +265,9 @@ nav a:hover {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.7rem;
+  flex: 1 1 auto;
 }
+
 
 .cardtitle {
   font-size: 1.3rem;
@@ -278,6 +280,21 @@ nav a:hover {
   font-size: 1rem;
   color: #e0e0e0;
   line-height: 1.4;
+}
+.card button {
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #00cc00;
 }
 
 /* Responsividade para os cards */
