@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="styles/cadastro.css">
 </head>
+
 <body>
     <header>
+            <h1><a href="index.html">My Monster</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Sabores</a></li>
+                    <li><a href="#">Encontrar</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cadastro.html">Conta</a></li>
+                </ul>
+            </nav>
         <h1>Cadastro</h1>
     </header>
     <main>
@@ -36,5 +48,17 @@
         <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
     </footer>
     <script src="js/conta.js"></script>
+    <!-- Início do Widget VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
+
 </html>

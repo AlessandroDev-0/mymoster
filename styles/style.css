@@ -36,6 +36,10 @@ header h1 {
   color: #ffffff;
   font-weight: 700;
 }
+header h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
 
 nav ul {
   display: flex;
