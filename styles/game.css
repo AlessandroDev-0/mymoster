@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import url(header.css);
+
+
+main {
+  margin-top: 100px;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+}
