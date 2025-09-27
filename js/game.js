@@ -1,10 +1,10 @@
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+import Player from  "../classes/Player.js"
 
 
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 
-
-
-
-var canvas = document.getElementById("gameCanvas");
-var ctx = canvas.getContext("2d");
-ctx.fillreact(50, 50, 100, 100);
+const Player = new Player();

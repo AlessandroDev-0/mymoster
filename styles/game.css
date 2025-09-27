@@ -1,13 +1,13 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
 @import url(header.css);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
-main {
-  margin-top: 100px;
-  padding: 2rem 1rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: green;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+canvas {
+    background-color: blanchedalmond
 }
